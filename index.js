@@ -12,6 +12,7 @@ let editElement;
 
 submit.addEventListener("submit", addItems);
 window.addEventListener("DOMContentLoaded", startup);
+ClearItems.addEventListener("click", clearAll);
 
 function addItems(e) {
   e.preventDefault();
@@ -97,6 +98,16 @@ function deleteFromLocalStorage(id) {
     }
   });
   localStorage.removeItem("PushDiv", JSON.stringify(items));
+}
+
+// Clear All Items //
+
+function clearAll() {
+  const allItems = document.querySelectorAll(".todolist");
+  allItems.forEach(function (item) {
+    PushDiv.remove(item);
+  });
+  localStorage.removeItem("PushDiv");
 }
 
 // BacK to Default //
