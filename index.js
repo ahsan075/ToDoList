@@ -104,9 +104,14 @@ function deleteFromLocalStorage(id) {
 
 function clearAll() {
   const allItems = document.querySelectorAll(".todolist");
-  allItems.forEach(function (item) {
-    PushDiv.remove(item);
-  });
+
+  if (allItems.length > 0) {
+    allItems.forEach(function (item) {
+      PushDiv.removeChild(item);
+    });
+  }
+
+  backToDefault();
   localStorage.removeItem("PushDiv");
 }
 
