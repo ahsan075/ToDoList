@@ -97,3 +97,12 @@
   padding: 10px 15px;
   letter-spacing: 1px;
 }
+
+@media (max-width: 590px) {
+  .noteContainer {
+    width: 90%;
+  }
+  .header {
+    width: 90%;
+  }
+}
