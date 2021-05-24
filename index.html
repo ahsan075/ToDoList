@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>ToDo Notes</title>
+  </head>
+  <body>
+    <h1 class="header">ToDo Notes</h1>
+
+    <div class="noteContainer">
+      <h2 class="list">Lists of your ToDo</h2>
+      <div>
+        <form class="inputContainer" action="">
+          <input
+            type="text"
+            id="note"
+            placeholder="Enter your note"
+            autocapitalize="off"
+          />
+          <button class="save" type="submit">save</button>
+        </form>
+      </div>
+
+      <div class="outputContainer"></div>
+
+      <div class="clearSection">
+        <button class="clearItems">Clear Items</button>
+      </div>
+    </div>
+  </body>
+
+  <script src="index.js"></script>
+</html>

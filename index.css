@@ -1,0 +1,99 @@
+/* article */
+
+.todolist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(82, 82, 254);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.value {
+  width: 60%;
+  color: aliceblue;
+  letter-spacing: 2px;
+  margin-left: 10px;
+}
+.edit {
+  margin-right: 5px;
+}
+.delete {
+  background: rgb(225, 15, 15);
+  color: aliceblue;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.todolist button {
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Main Container */
+
+.noteContainer {
+  padding: 10px 0;
+  width: 50%;
+  margin: auto;
+  background: rgb(54, 237, 54);
+}
+.list {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+/* Heading */
+
+.header {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  background-color: green;
+  color: aliceblue;
+  margin-top: 10%;
+  padding: 10px 0;
+}
+
+/* Input Container */
+
+.inputContainer {
+  display: flex;
+  justify-content: center;
+}
+.inputContainer input {
+  padding: 6px 10px;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-right: 20px;
+}
+
+.inputContainer input:focus {
+  color: rgb(82, 82, 254);
+}
+
+.save {
+  outline: none;
+  border: none;
+  padding: 0 15px;
+  letter-spacing: 1px;
+}
+
+/* Clear Button */
+
+.clearSection {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.clearSection button {
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  letter-spacing: 1px;
+}
